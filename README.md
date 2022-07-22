@@ -1,11 +1,12 @@
 # Webex-Bot-with-Ngrok
 Basic example of a Webex bot that automatically manages it's own webhooks, making sure they point to the correct Ngrok public URL.
 
-<img src="https://github.com/DJF3/My-Image-Repo/blob/main/webex-python-bot-ngrok.jpg?raw=true" width="650px" style="margin-left:50px;"/>
+<img src="https://github.com/DJF3/My-Image-Repo/blob/main/webex-python-bot-ngrok.jpg?raw=true" width="650px" style="padding-left:50px;"/>
 
+**Time to setup**: if you have setup a bot and have Python installed you can get this to work in 5-10 minutes.
 
 **A Prepare**
-- Create a bot (instructions here)
+- Create a bot ([instructions here](https://cisco.sharepoint.com/Sites/CollaborationAPI/SitePages/Create-a-Webex-B.aspx))
 - Download the scripts here 
 - Check if you have python: "python -V".    The version should be 3.9 or higher
 - Check if you have pip: "python -m pip -V".    'pip' is used to install Python libraries
