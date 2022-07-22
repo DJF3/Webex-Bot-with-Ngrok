@@ -6,29 +6,29 @@ Basic example of a Webex bot that automatically manages it's own webhooks, makin
 **Time to setup**: if you have setup a bot and have Python installed you can get this to work in 5-10 minutes.
 
 **A Prepare**
-- Create a bot ([instructions here](https://cisco.sharepoint.com/Sites/CollaborationAPI/SitePages/Create-a-Webex-B.aspx))
-- Download the scripts here 
-- Check if you have python: "python -V".    The version should be 3.9 or higher
-- Check if you have pip: "python -m pip -V".    'pip' is used to install Python libraries
+- Create a bot (on [developer.webex.com](https://developer.webex.com))
+- Download the code (above)
+- Check if you have python: ```python -V```    The version should be 3.9 or higher
+- Check if you have pip: ```python -m pip -V```    'pip' is used to install Python libraries
 
 **B Create a folder**** for the bot and copy the bot files to this folder
-- "mkdir webex-bot-ngrok"
-- "cd webex-bot-ngrok"
+- ```mkdir webex-bot-ngrok```
+- ```cd webex-bot-ngrok```
 - copy bot files to this folder  (when using Pipenv, also copy "Pipfile")
 
 **C Install "Ngrok"**
-- Check if you have Ngrok: "ngrok"
-- If not installed, download the Ngrok installer and run it. 
+- Check if you have Ngrok: ```ngrok```
+- If not installed, download the [Ngrok installer](https://ngrok.com/download) and run it. 
 
 ______________ *BELOW: D/E/F/G only if you use Pipenv* ______________
 
 **D Install "Pipenv"** (if not installed)
-- Check if you have pipenv: "pipenv -V"
-- If not, install it: "python -m pip install pipenv"
+- Check if you have pipenv: ```pipenv -V```
+- If not, install it: ```python -m pip install pipenv```
 
 
 **E Create Pipfile** (***or use the provided Pipfile***)
-- "touch Pipfile" (creating the file)
+- (Mac) ```touch Pipfile``` (or create a file called "Pipfile")
 - Edit "Pipfile"
 - Paste content below in the Pipfile and save it. The folder now contains 1 file: "Pipfile" and Pipenv is ready to do its job.
 
@@ -46,32 +46,32 @@ python_version = "3.9"
 ```
 
 **F Setup virtual environment**
-- "Pipenv install"
+- ```Pipenv install```
 - Based on the Pipfile, this creates a local environment with the required packages.
 
 **G Activate the created virtual environment**
-- "Pipenv shell"
+- ```Pipenv shell```
 - Your prompt changes to indicate you are in the "isolated" setup.
+
 NOTE: When you start the bot, you need to be in the Pipenv shell. Otherwise, it will not have the right libraries available.
-alternatively: type "pipenv run python webex-bot-ngrok.py"
-This directly runs the python code inside the pipenv environment. 
+alternatively: type ```pipenv run python webex-bot-ngrok.py``` This directly runs the python code inside the pipenv environment. 
 
 ______________ *ABOVE: D/E/F/G only if you use Pipenv* ______________
 
 **H Set bot token environment variable**
-- (MacOS): export MY_BOT_TOKEN='YOUR_TOKEN_HERE'
-- (Windows): set MY_BOT_TOKEN=YOUR_TOKEN_HERE
+- (MacOS): ```export MY_BOT_TOKEN='YOUR_TOKEN_HERE'```
+- (Windows): ```set MY_BOT_TOKEN=YOUR_TOKEN_HERE```
 
 
 **I Run the Bot** (Python code)
-- python webex-bot-ngrok.py  
-- When the "___start_____" message appears, test the bot!
+- ```python webex-bot-ngrok.py```
+- When the ```___start_____``` message appears, test the bot!
 
 
 **J Test the bot**
-- Send "test" to the bot.
+- Send ```test``` to the bot.
 - It should repeat your message.
-- Send "hello" to the bot. The not should respond differently.
+- Send ```hello``` to the bot. The not should respond differently.
 
 
 
@@ -92,6 +92,6 @@ How? After "my_bot_token=", replace the os.getenv with your bot token between qu
 
 - **NGROK tunnel expires after 2 hours?** Create a (free) Ngrok account and [go here](https://dashboard.ngrok.com/get-started/your-authtoken) to get your API token and see how to use it. After that, no code modifications are needed.
 
-- **I don't want to/can use Ngrok** check out my alternative solution: Webex Bot using Websockets
+- **I don't want to/can use Ngrok** check out my alternative solution: [Webex Bot using Websockets](https://github.com/DJF3/Webex-Bot-with-Websockets)
 
 
