@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""MY_PYTHON_SCRIPT Console Script.
+"""Webex Ngrok Bot code.
 GOAL: Webex Bot code that automatically creates ngrok webhooks
 BASED ON: https://github.com/DJF3/Virtual-Lamp-Code-templates, template bot
 Copyright (c) 2022 Cisco and/or its affiliates.
