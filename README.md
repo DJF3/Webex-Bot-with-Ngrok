@@ -95,3 +95,6 @@ How? After "my_bot_token=", replace the os.getenv with your bot token between qu
 - **I don't want to/can use Ngrok** check out my alternative solution: [Webex Bot using Websockets](https://github.com/DJF3/Webex-Bot-with-Websockets)
 
 
+# More Webex Development resources?
+
+Go to [cs.co/webexdevinfo](http://cs.co/webexdevinfo)
